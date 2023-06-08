@@ -67,5 +67,4 @@ int				get_min_index(t_list **stack, int min);
 void			free_split(char **str);
 void			free_stack(t_list **stack);
 
-
 #endif
