@@ -6,7 +6,7 @@
 /*   By: pdelanno <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/22 17:15:07 by pdelanno          #+#    #+#             */
-/*   Updated: 2023/03/21 15:20:46 by pdelanno         ###   ########.fr       */
+/*   Updated: 2023/07/03 15:18:25 by pdelanno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int	ft_eval_format(t_print *tab, char const *format, int i)
 	{
 		i = sub_eval(tab, format, i);
 		while (format[i] <= 57 && format[i] >= 48)
-		{	
+		{
 			tab->wdt = (tab->wdt * 10) + (format[i] - 48);
 			i++;
 		}

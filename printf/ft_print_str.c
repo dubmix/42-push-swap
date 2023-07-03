@@ -6,7 +6,7 @@
 /*   By: pdelanno <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/22 17:38:19 by pdelanno          #+#    #+#             */
-/*   Updated: 2023/03/20 17:02:14 by pdelanno         ###   ########.fr       */
+/*   Updated: 2023/07/03 15:17:56 by pdelanno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ void	sub_str(t_print *tab, int prc, char *str)
 			prc -= 1;
 			i++;
 		}
-	}		
+	}
 	else
 	{
 		while (str[i])

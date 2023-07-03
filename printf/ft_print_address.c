@@ -6,7 +6,7 @@
 /*   By: pdelanno <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/01 16:28:40 by pdelanno          #+#    #+#             */
-/*   Updated: 2023/03/21 15:12:04 by pdelanno         ###   ########.fr       */
+/*   Updated: 2023/07/03 15:16:46 by pdelanno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ void	ft_print_address(t_print *tab)
 }
 
 int	sub_address(t_print *tab, unsigned long nb)
-{	
+{
 	if (nb == 0)
 	{
 		tab->totlen += write(1, "(nil)", 5);

@@ -6,7 +6,7 @@
 /*   By: pdelanno <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/08 19:11:19 by pdelanno          #+#    #+#             */
-/*   Updated: 2023/03/20 16:29:08 by pdelanno         ###   ########.fr       */
+/*   Updated: 2023/07/03 15:17:27 by pdelanno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ void	ft_right_align(t_print *tab, int nb)
 		nb = -nb;
 		tab->lenwdt += 1;
 		tab->neg = 1;
-	}	
+	}
 	while (nb > 9)
 	{
 		nb = nb / 10;
@@ -86,7 +86,7 @@ void	ft_left_align(t_print *tab, int nb)
 		nb = -nb;
 		tab->lenwdt += 1;
 		tab->neg = 1;
-	}	
+	}
 	while (nb > 9)
 	{
 		nb = nb / 10;
