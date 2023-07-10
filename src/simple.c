@@ -45,6 +45,7 @@ void	sort3(t_list **stack)
 		ra(stack);
 		sa(stack);
 		rra(stack);
+		return ;
 	}
 	sort3_continued(stack, top, min);
 }
