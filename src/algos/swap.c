@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   s.c                                                :+:      :+:    :+:   */
+/*   swap.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pdelanno <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: pdelanno <pdelanno@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/24 11:09:33 by pdelanno          #+#    #+#             */
-/*   Updated: 2023/06/06 15:51:05 by pdelanno         ###   ########.fr       */
+/*   Updated: 2023/10/13 17:08:47 by pdelanno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../push_swap.h"
+#include "../push_swap.h"
 
 int	ft_swap(t_list **stack)
 {
@@ -35,14 +35,14 @@ int	ft_swap(t_list **stack)
 int	sa(t_list **stack_a)
 {
 	ft_swap(stack_a);
-	ft_printf("sa\n");
+	printf("sa\n");
 	return (0);
 }
 
 int	sb(t_list **stack_b)
 {
 	ft_swap(stack_b);
-	ft_printf("sb\n");
+	printf("sb\n");
 	return (0);
 }
 
@@ -50,6 +50,6 @@ int	ss(t_list **stack_a, t_list **stack_b)
 {
 	ft_swap(stack_a);
 	ft_swap(stack_b);
-	ft_printf("ss\n");
+	printf("ss\n");
 	return (0);
 }

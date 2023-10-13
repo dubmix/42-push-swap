@@ -3,19 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pdelanno <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: pdelanno <pdelanno@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/24 09:59:27 by pdelanno          #+#    #+#             */
-/*   Updated: 2023/06/08 09:54:02 by pdelanno         ###   ########.fr       */
+/*   Updated: 2023/10/13 17:17:21 by pdelanno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
 
-# include "printf/ft_printf.h"
-# include <limits.h>
 # include <unistd.h>
+# include <limits.h>
+# include <stdlib.h>
+# include <stdio.h>
 
 typedef struct s_list
 {

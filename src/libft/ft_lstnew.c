@@ -1,23 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pdelanno <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: pdelanno <pdelanno@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/08 15:20:05 by pdelanno          #+#    #+#             */
-/*   Updated: 2022/12/13 17:44:13 by pdelanno         ###   ########.fr       */
+/*   Created: 2022/12/08 15:00:46 by pdelanno          #+#    #+#             */
+/*   Updated: 2023/10/13 17:21:31 by pdelanno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
-void	ft_lstadd_front(t_list **lst, t_list *new)
+t_list	*ft_lstnew(int number)
+
 {
-	if (lst != 0)
-	{
-		if (*lst != 0)
-			new->next = *lst;
-		*lst = new;
-	}
+	t_list	*newnode;
+
+	newnode = (t_list *)malloc(sizeof(*newnode));
+	if (newnode == 0)
+		return (NULL);
+	newnode->value = number;
+	newnode->index = -1;
+	newnode->next = NULL;
+	return (newnode);
 }

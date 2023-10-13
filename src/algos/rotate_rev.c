@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rr.c                                               :+:      :+:    :+:   */
+/*   rotate_rev.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pdelanno <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: pdelanno <pdelanno@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/06 15:37:28 by pdelanno          #+#    #+#             */
-/*   Updated: 2023/06/06 15:53:38 by pdelanno         ###   ########.fr       */
+/*   Updated: 2023/10/13 17:09:33 by pdelanno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../push_swap.h"
+#include "../push_swap.h"
 
 int	ft_reverse_rotate(t_list **stack)
 {
@@ -32,14 +32,14 @@ int	ft_reverse_rotate(t_list **stack)
 int	rra(t_list **stack_a)
 {
 	ft_reverse_rotate(stack_a);
-	ft_printf("rra\n");
+	printf("rra\n");
 	return (0);
 }
 
 int	rrb(t_list **stack_b)
 {
 	ft_reverse_rotate(stack_b);
-	ft_printf("rrb\n");
+	printf("rrb\n");
 	return (0);
 }
 
@@ -47,6 +47,6 @@ int	rrr(t_list **stack_a, t_list **stack_b)
 {
 	ft_reverse_rotate(stack_a);
 	ft_reverse_rotate(stack_b);
-	ft_printf("rrr\n");
+	printf("rrr\n");
 	return (0);
 }

@@ -3,20 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   check_args.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pdelanno <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: pdelanno <pdelanno@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/06 15:28:29 by pdelanno          #+#    #+#             */
-/*   Updated: 2023/06/06 16:43:21 by pdelanno         ###   ########.fr       */
+/*   Updated: 2023/10/13 17:05:20 by pdelanno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // valgrind check for ft_error exit
 
-#include "../push_swap.h"
+#include "push_swap.h"
 
 int	ft_error(void)
 {
-	ft_printf("Error\n");
+	printf("Error\n");
 	return (0);
 }
 

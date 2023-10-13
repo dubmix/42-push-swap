@@ -3,29 +3,38 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: pdelanno <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: pdelanno <pdelanno@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/24 11:41:05 by pdelanno          #+#    #+#              #
-#    Updated: 2023/05/29 09:20:32 by pdelanno         ###   ########.fr        #
+#    Updated: 2023/10/13 17:19:58 by pdelanno         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = push_swap
 
-SRCS = src/push_swap.c src/utils.c src/index.c src/algos/p.c src/algos/s.c \
-src/algos/r.c src/algos/rr.c src/simple.c src/check_args.c src/complex.c \
-src/free.c lib_ft/ft_atoi.c lib_ft/ft_lstadd_back.c lib_ft/ft_lstadd_front.c \
-lib_ft/ft_lstlast.c lib_ft/ft_lstnew.c lib_ft/ft_lstsize.c lib_ft/ft_split.c \
-lib_ft/ft_strlcpy.c printf/flags.c printf/ft_eval_format.c \
-printf/ft_print_address.c printf/ft_print_char.c printf/ft_printf.c \
-printf/ft_print_hexalo.c printf/ft_print_hexaup.c printf/ft_print_int.c \
-printf/ft_print_str.c printf/ft_print_unsignedint.c
+SRCS = src/push_swap.c \
+		src/check_args.c \
+		src/simple.c \
+		src/complex.c \
+		src/index.c \
+		src/free.c \
+		src/utils.c \
+		src/algos/push.c \
+		src/algos/swap.c \
+		src/algos/rotate.c \
+		src/algos/rotate_rev.c \
+		src/libft/ft_atoi.c \
+		src/libft/ft_lstadd_back.c \
+		src/libft/ft_lstadd_front.c \
+		src/libft/ft_lstlast.c \
+		src/libft/ft_lstnew.c \
+		src/libft/ft_lstsize.c \
+		src/libft/ft_split.c \
+		src/libft/ft_strlcpy.c \
 
 OBJS = ${SRCS:.c=.o}
 
-HEADERS = push_swap.h
-
-CFLAGS = -g -Werror -Wall -Wextra
+CFLAGS = -Werror -Wall -Wextra -g
 
 .c.o:
 				@cc ${CFLAGS} -c $^ -o $@
@@ -34,17 +43,16 @@ all:			${NAME}
 
 $(NAME):		${OBJS}
 						@cc ${OBJS} $(CFLAGS) -o $(NAME)
-						@echo "Program is ready!"
+						@echo "\033[1;5mProgram is ready!\033[0m"
 
 clean:
 				@rm -f ${OBJS}
 
 fclean:			clean
-						@cd lib_ft && rm -f ${NAME}
-						@cd printf && rm -f ${NAME}
-						@cd src && rm -f ${NAME}
+						@cd src/libft && rm -f ${NAME}
+						@cd src/algos && rm -f ${NAME}
 						@rm -f ${NAME}
-						@echo "All clean!"
+						@echo "\033[1mAll clean!\033[0m"
 
 re: fclean all
 
