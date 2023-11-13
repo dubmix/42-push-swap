@@ -19,7 +19,7 @@ Thanks to **[o-reo](https://github.com/o-reo)** for the handy visualizer.
 
 ## Allowed operations
 
-> <i>The following commands are available at your hand:
+> The following commands are available at your hand:
 > - `sa` (swap a): Swaps the first 2 elements at the top of stack a
 > - `sb` (swap b): Swaps the first 2 elements at the top of stack b
 > - `ss` : sa and sb simultaneously
@@ -30,7 +30,7 @@ Thanks to **[o-reo](https://github.com/o-reo)** for the handy visualizer.
 > - `rr` : ra and rb simultaneously
 > - `rra` (reverse rotate a): Shift down all elements of stack a by 1
 > - `rrb` (reverse rotate b): Shift down all elements of stack b by 1
-> - `rrr` : rra and rrb simultaneously</i>
+> - `rrr` : rra and rrb simultaneously
 
 ## Usage
 
