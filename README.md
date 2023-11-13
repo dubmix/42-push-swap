@@ -34,7 +34,7 @@ Thanks to **[o-reo](https://github.com/o-reo)** for the handy visualizer.
 
 ## Usage
 
-> - Warning: `Makefile` is configured for `Linux` use only.
+Warning: `Makefile` is configured for `Linux` use only.
 
 > - Compile with `make`
 > - Then run with `./push_swap` + `ARGS` | Example: `./push_swap "5 3 42 43 99 98"`
